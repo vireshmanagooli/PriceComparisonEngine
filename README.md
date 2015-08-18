@@ -6,6 +6,8 @@ Following are the modules involved.
 In this module, scraping is done from various e-commerece site and gets the latest data in the form of JSON.
 
 Following is the <b>Scraper Object</b> structure.
+
+<pre>
 {
   "id": "1234",
   "name": "Website Products",
@@ -34,7 +36,7 @@ Following is the <b>Scraper Object</b> structure.
     "collection1"
   ]
 }
-
+</pre>
 The API object
 
 1. <b>id <string> : </b> unique 8 character identifier for the API
