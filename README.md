@@ -96,16 +96,16 @@ Keep a track of the prices and if price goes down then users will get notified b
 Following is the data structure for the Reviews data.
 <pre>
 {
-     id: 'Id of the Review',
-     prodId: 'Product Id',
-     source: 'Source store of the review, Ex- Flipkart, Amazon etc',
+     id:                'Id of the Review',
+     prodId:         'Product Id',
+     source:        'Source store of the review, Ex- Flipkart, Amazon etc',
      sourceURL: 'Source URL from flipkart and Amazon etc',
-     header: 'Header of the review',
-     author: 'Review Author',
-     text: 'Review text',
-     date: 'Review date',
-     rating: 'Rating in the scale of 1 to 5', 
-     like: 'Like count to the Review'    
+     header:        'Header of the review',
+     author:         'Review Author',
+     text:             'Review text',
+     date:            'Review date',
+     rating:          'Rating in the scale of 1 to 5', 
+     like:              'Like count to the Review'    
 }
 </pre>
 
@@ -113,9 +113,9 @@ Following is the data structure for the Reviews data.
 Following is the data structure for the Price History
 <pre>
 {
-     id: 'id of the price history',
-     prodId: 'Product Id',
-     ticker: [{date: price}]                 
+     id:          'id of the price history',
+     prodId:   'Product Id',
+     ticker:    [{date: price}]                 
 }
 </pre>
 
@@ -123,18 +123,18 @@ Following is the data structure for the Price History
 Following is the data structure for the product specification.
 <pre>
 {
-      id: 'specification Id',
-      productId: 'Product Id',
-      general: 'JSON type - Brand, sim type etc.',
-      display: 'JSON type - Resolution, size etc',
-      camera: 'JSON type  - rare camera etc',
-      warranty: 'JSON type - Has the Warranty Summary',
-      battery: 'JSON type - Has the camera Camera type',
+      id:                'specification Id',
+      productId:    'Product Id',
+      general:       'JSON type - Brand, sim type etc.',
+      display:        'JSON type - Resolution, size etc',
+      camera:       'JSON type  - rare camera etc',
+      warranty:     'JSON type - Has the Warranty Summary',
+      battery:        'JSON type - Has the camera Camera type',
       connectivity: 'JSON type - Bluetooth etc',
-      memory: 'JSON type - Memory etc',
-      dimension: 'JSON type -  Weight etc',
-      multimedia: 'JSON type - Music Player etc',
-      platform: 'JSON type - OS, Processor etc',
+      memory:      'JSON type - Memory etc',
+      dimension:   'JSON type -  Weight etc',
+      multimedia:  'JSON type - Music Player etc',
+      platform:      'JSON type - OS, Processor etc',
       otherFeature: 'JSON type - Sensors etc',
 }
 </pre>
@@ -143,19 +143,35 @@ Following is the data structure for the product specification.
 Following has the online store prices
 <pre>
 {
-       id: 'store product id',
+       id:             'store product id',
        productId: 'Product Id',
-       storeId: 'Store Id. ex- flipkart, Amazon etc',
-       img: 'location of the image',
-       price: 'Price of the product',
-       avgRate: 'Average rating',
-       offer: 'Offer text',
-       cod: 'Boolean type to indicate COD',
-       emi: 'Boolean type to indicate EMI is available or not',
+       storeId:     'Store Id. ex- flipkart, Amazon etc',
+       img:          'location of the image',
+       price:        'Price of the product',
+       avgRate:  'Average rating',
+       offer:        'Offer text',
+       cod:         'Boolean type to indicate COD',
+       emi:         'Boolean type to indicate EMI is available or not',
        returnPolicy: 'Number of days within which product is accepted',
-       color: 'Available colors',
-       link: 'Link to the product in the store',
-       delivery: 'delivery of the product in days' ,
-       alert: 'Alert of price drop for particular product for a give store.'
+       color:        'Available colors',
+       link:          'Link to the product in the store',
+       delivery:   'delivery of the product in days' ,
+       alert:        'Alert of price drop for particular product for a give store.'
+}
+</pre>
+
+### 5. Product
+Following is the Product details
+<pre>
+{
+        id:        'Product Id',
+        price:   'Least price from the store',
+        colors:  [Array of available colors],
+        sizes:   [Array of available sizes],
+        brief:    [Array of details],
+        storePrice: 'StorePrice',
+        specs:  'Specs',
+        review: 'Review',
+        history: 'History'
 }
 </pre>
