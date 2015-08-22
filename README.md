@@ -90,18 +90,31 @@ Latest and History prices will be managed.
 ## 11. Notification Manager
 Keep a track of the prices and if price goes down then users will get notified by email.
 
-## Database
+## 12. Database structure
 
-### 1. Reviews : Following is the data structure for the Reviews data.
+### 1. Reviews : 
+Following is the data structure for the Reviews data.
 <pre>
 {
      id: 'Id of the Review',
+     prodId: 'Product Id',
      source: 'Source store of the review, Ex- Flipkart, Amazon etc',
      sourceURL: 'Source URL from flipkart and Amazon etc',
      header: 'Header of the review',
      author: 'Review Author',
      text: 'Review text',
      date: 'Review date',
-     rating: 'Rating in the scale of 1 to 5',     
+     rating: 'Rating in the scale of 1 to 5', 
+     like: 'Like count to the Review'    
+}
+</pre>
+
+### 2. Price History
+Following is the data structure for the Price History
+<pre>
+{
+     id: 'id of the price history',
+     prodId: 'Product Id',
+     ticker: [{date: price}]                 
 }
 </pre>
