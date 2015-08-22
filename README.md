@@ -118,3 +118,23 @@ Following is the data structure for the Price History
      ticker: [{date: price}]                 
 }
 </pre>
+
+### 3. Specification
+Following is the data structure for the product specification.
+<pre>
+{
+      id: 'specification Id',
+      productId: 'Product Id',
+      general: 'JSON type - Has the general features like - Brand, sim type etc.',
+      display: 'JSON type - Has the display features like - Resolution, size etc',
+      camera: 'JSON type - Has the camera features like - rare camera etc',
+      warranty: 'JSON type - Has the Warranty Summary',
+      battery: 'JSON type - Has the camera Camera type',
+      connectivity: 'JSON type - Has the camera features like - Bluetooth etc',
+      memory: 'JSON type - Has the camera features like - Memory etc',
+      dimension: 'JSON type - Has the camera features like - Weight etc',
+      multimedia: 'JSON type - Has the camera features like - Music Player etc',
+      platform: 'JSON type - Has the camera features like - OS, Processor etc',
+      otherFearure: 'JSON type - Has the camera features like - Sensors etc',
+}
+</pre>
