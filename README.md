@@ -125,16 +125,37 @@ Following is the data structure for the product specification.
 {
       id: 'specification Id',
       productId: 'Product Id',
-      general: 'JSON type - Has the general features like - Brand, sim type etc.',
-      display: 'JSON type - Has the display features like - Resolution, size etc',
-      camera: 'JSON type - Has the camera features like - rare camera etc',
+      general: 'JSON type - Brand, sim type etc.',
+      display: 'JSON type - Resolution, size etc',
+      camera: 'JSON type  - rare camera etc',
       warranty: 'JSON type - Has the Warranty Summary',
       battery: 'JSON type - Has the camera Camera type',
-      connectivity: 'JSON type - Has the camera features like - Bluetooth etc',
-      memory: 'JSON type - Has the camera features like - Memory etc',
-      dimension: 'JSON type - Has the camera features like - Weight etc',
-      multimedia: 'JSON type - Has the camera features like - Music Player etc',
-      platform: 'JSON type - Has the camera features like - OS, Processor etc',
-      otherFearure: 'JSON type - Has the camera features like - Sensors etc',
+      connectivity: 'JSON type - Bluetooth etc',
+      memory: 'JSON type - Memory etc',
+      dimension: 'JSON type -  Weight etc',
+      multimedia: 'JSON type - Music Player etc',
+      platform: 'JSON type - OS, Processor etc',
+      otherFeature: 'JSON type - Sensors etc',
+}
+</pre>
+
+### 4. StorePrice
+Following has the online store prices
+<pre>
+{
+       id: 'store product id',
+       productId: 'Product Id',
+       storeId: 'Store Id. ex- flipkart, Amazon etc',
+       img: 'location of the image',
+       price: 'Price of the product',
+       avgRate: 'Average rating',
+       offer: 'Offer text',
+       cod: 'Boolean type to indicate COD',
+       emi: 'Boolean type to indicate EMI is available or not',
+       returnPolicy: 'Number of days within which product is accepted',
+       color: 'Available colors',
+       link: 'Link to the product in the store',
+       delivery: 'delivery of the product in days' ,
+       alert: 'Alert of price drop for particular product for a give store.'
 }
 </pre>
