@@ -165,7 +165,9 @@ Following is the Product details
 <pre>
 {
         id:         'Product Id',
+        header:     'Header of the product',
         price:      'Least price from the store',
+        img:        'Image link to the product',
         colors:     [Array of available colors],
         sizes:      [Array of available sizes],
         brief:      [Array of details],
