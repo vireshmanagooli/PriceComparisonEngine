@@ -139,13 +139,13 @@ Following is the data structure for the product specification.
 }
 </pre>
 
-### 4. StorePrice
+### 4. Store
 Following has the online store prices
 <pre>
 {
        id:           'store product id',
-       productId:    'Product Id',
-       storeId:      'Store Id. ex- flipkart, Amazon etc',
+       name:         'Store name. Ex- Amazon, Flipkart',
+       scrape:       'Scrape Object to scrape the product from the store.',
        img:          'location of the image',
        price:        'Price of the product',
        avgRate:      'Average rating',
@@ -165,27 +165,26 @@ Following is the Product details
 <pre>
 {
         id:         'Product Id',
-        header:     'Header of the product',
+        title:      'Title of the product',
+        category:   'Category of the item. Ex- Mobile, Tv etc',
         price:      'Least price from the store',
         img:        'Image link to the product',
         colors:     [Array of available colors],
         sizes:      [Array of available sizes],
         brief:      [Array of details],
-        storePrice: 'StorePrice',
+        stores:     [Array of Stores],
         specs:      'Specs',
         review:     'Review',
         history:    'History'
 }
 </pre>
 
-### 6. Store
+### 6. Scrape
 Following is the Store details
 <pre>
 {
-      id: 'Store Id',
-      name: 'Store name. Ex- Amazon, Flipkart',
-      category: 'Category of the item. Ex- Mobile, Tv etc',
-      productURL: 'URL of the product',
-      scrapeStructure: 'Structure of the scraping iteems.'      
+      id:        'Scrape Id',
+      url:       'URL of the product',
+      structure: 'Structure of the scraping iteems.'      
 }
 </pre>
