@@ -177,3 +177,15 @@ Following is the Product details
         history:    'History'
 }
 </pre>
+
+### 6. Store
+Following is the Store details
+<pre>
+{
+      id: 'Store Id',
+      name: 'Store name. Ex- Amazon, Flipkart',
+      category: 'Category of the item. Ex- Mobile, Tv etc',
+      productURL: 'URL of the product',
+      scrapeStructure: 'Structure of the scraping iteems.'      
+}
+</pre>
