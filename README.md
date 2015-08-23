@@ -92,7 +92,7 @@ Keep a track of the prices and if price goes down then users will get notified b
 
 ## 12. Database structure
 
-### 1. Reviews : 
+### 1. Review : 
 Following is the data structure for the Reviews data.
 <pre>
 {
@@ -109,7 +109,7 @@ Following is the data structure for the Reviews data.
 }
 </pre>
 
-### 2. Price History
+### 2. History
 Following is the data structure for the Price History
 <pre>
 {
@@ -154,9 +154,8 @@ Following has the online store prices
        emi:          'Boolean type to indicate EMI is available or not',
        returnPolicy: 'Number of days within which product is accepted',
        color:        'Available colors',
-       link:         'Link to the product in the store',
        delivery:     'delivery of the product in days' ,
-       alert:        'Alert of price drop for particular product for a give store.',
+       alert:        'email adresses',
        reviews:      [Array of Reviews],
 }
 </pre>
