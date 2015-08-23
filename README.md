@@ -97,10 +97,10 @@ Following is the data structure for the Reviews data.
 <pre>
 {
      id:        'Id of the Review',
-     prodId:    'Product Id',
+     product:   'Product Object',
      source:    'Source store of the review, Ex- Flipkart, Amazon etc',
      sourceURL: 'Source URL from flipkart and Amazon etc',
-     header:    'Header of the review',
+     title:     'Title of the review',
      author:    'Review Author',
      text:      'Review text',
      date:      'Review date',
@@ -113,9 +113,9 @@ Following is the data structure for the Reviews data.
 Following is the data structure for the Price History
 <pre>
 {
-     id:      'id of the price history',
-     prodId:  'Product Id',
-     ticker:  [{date: price}]                 
+     id:        'id of the price history',
+     product:   'Product Object',
+     ticker:    [{date: price}]                 
 }
 </pre>
 
@@ -124,7 +124,7 @@ Following is the data structure for the product specification.
 <pre>
 {
       id:           'specification Id',
-      productId:    'Product Id',
+      product:      'Product Object', 
       general:      'JSON type - Brand, sim type etc.',
       display:      'JSON type - Resolution, size etc',
       camera:       'JSON type  - rare camera etc',
@@ -145,7 +145,7 @@ Following has the online store prices
 {
        id:           'store product id',
        name:         'Store name. Ex- Amazon, Flipkart',
-       scrape:       'Scrape Object to scrape the product from the store.',
+       scrape:       'Object of Scrape,
        img:          'location of the image',
        price:        'Price of the product',
        avgRate:      'Average rating',
@@ -156,7 +156,8 @@ Following has the online store prices
        color:        'Available colors',
        link:         'Link to the product in the store',
        delivery:     'delivery of the product in days' ,
-       alert:        'Alert of price drop for particular product for a give store.'
+       alert:        'Alert of price drop for particular product for a give store.',
+       reviews:      [Array of Reviews],
 }
 </pre>
 
@@ -166,25 +167,27 @@ Following is the Product details
 {
         id:         'Product Id',
         title:      'Title of the product',
+        subTitle:   'Sub title of the product',    
         category:   'Category of the item. Ex- Mobile, Tv etc',
-        price:      'Least price from the store',
+        price:      'Least price from the store - This has to be derived',
         img:        'Image link to the product',
         colors:     [Array of available colors],
-        sizes:      [Array of available sizes],
+        sizes:      [{size: url}],
         brief:      [Array of details],
-        stores:     [Array of Stores],
-        specs:      'Specs',
-        review:     'Review',
-        history:    'History'
+        scrapes:    [Array of Scrape],
+        specs:      'Object of Specs',
+        history:    'Object of History'
 }
 </pre>
 
 ### 6. Scrape
-Following is the Store details
+Following is the Scrape details
 <pre>
 {
       id:        'Scrape Id',
       url:       'URL of the product',
-      structure: 'Structure of the scraping iteems.'      
+      structure: 'Structure of the scraping iteems',    
+      store:     'Store Object',
+      product:   'Product Object'  
 }
 </pre>
