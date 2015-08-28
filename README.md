@@ -155,7 +155,7 @@ Following has the online store prices
        returnPolicy: 'Number of days within which product is accepted',
        color:        'Available colors',
        delivery:     'delivery of the product in days' ,
-       alert:        'email adresses',
+       alert:        'holds email address of the price drop alert requester.',
        reviews:      [Array of Reviews],
 }
 </pre>
