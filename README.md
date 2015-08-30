@@ -183,11 +183,13 @@ Following is the Product details
 Following is the Scrape details
 <pre>
 {
-      id:        'Scrape Id',
-      url:       'URL of the product',
-      structure: 'Structure of the scraping iteems',    
-      store:     'Store Object',
-      product:   'Product Object'  
+      id:             'Scrape Id',
+      url:            'URL of the product',
+      structure:      'Structure of the scraping iteems',    
+      store:          'Store Object',
+      process:        'Involves the array of processing. Ex- Empty check',
+      mapping:        'Contains the mapping between scraped Object and Database collections',
+      productStore:   'Productstore Object'  
 }
 </pre>
 
